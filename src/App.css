@@ -1,38 +1,74 @@
+/* App.css */
+
+ 
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-image: url('https://images.axios.com/TJePMhjW6B7pst4sVKnudUwotpQ=/618x0:5756x3854/1600x1200/2023/03/07/1678205109431.jpg');
+  background-size: cover; /* Cover the entire viewport */
+  background-position: center; /* Center the image */
+  background-repeat: repeat; /* Prevent tiling */
+  color: #ffffff; /* Change text color to white for better visibility */
+  height: 100vh; /* Ensure the body takes the full height of the viewport */
+}
+
+
+
+
 .App {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
   text-align: center;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow for depth */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 2.0em;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow for header text */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+label {
+  display: block;
+  margin: 20px 0 10px;
+  font-size: 1.2em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+select, input[type="number"], button {
+  padding: 10px;
+  font-size: 0.8em;
+  border-radius: 5px; /* Rounded corners for inputs */
+  border: 1px solid #444; /* Border for inputs */
+  background-color: #222; /* Dark background for inputs */
+  color: #ffffff; /* White text for inputs */
 }
 
-.App-link {
-  color: #61dafb;
+button {
+  background-color: #ffcc00; /* Bright button color */
+  color: #222; /* Dark text for button */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover {
+  background-color: #e6b800; /* Slightly darker on hover */
+}
+
+ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0;
+}
+
+li {
+  background-color: #ed3b3b99; /* Dark background for movie list */
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 5px; /* Rounded corners for list items */
+  transition: transform 0.2s; /* Smooth transition for hover */
+}
+
+li:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
 }
